@@ -1,0 +1,41 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #f8f9fa; 
+    color: #333; 
+    height: 100%;
+}
+
+#calendar {
+    max-width: 900px; 
+    width: 100%; 
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.fc-toolbar-chunk button.fc-insertActivityButton-button {
+    background-color: #28a745; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.fc-toolbar-chunk button.fc-insertActivityButton-button:hover {
+    background-color: #218838; 
+}
+
+
+.fc-toolbar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; 
+}
