@@ -9,9 +9,9 @@
 </head>
 <body>
 
-    <!-- FullCalendar Container -->
+    <div class="container">
     <div id='calendar'></div>
-
+<div class="form">
     <!-- Form to insert activity -->
     <form action="insertActivity.php" method="POST" id="activityForm">
         <label for="activityTitle">Activity Title:</label>
@@ -22,7 +22,8 @@
 
         <button type="submit" id="insertActivityButton">Insert Activity</button>
     </form>
-
+    </div>
+    </div>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
