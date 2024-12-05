@@ -15,9 +15,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param('i', $id);
 
     if ($stmt->execute()) {
-        echo json_encode(['success' => true, 'message' => 'Event deleted successfully!']);
+        echo json_encode('Event deleted successfully!');
     } else {
-        echo json_encode(['success' => false, 'message' => 'Error deleting event: ' . $conn->error]);
+        echo json_encode('Error deleting event: ' . $conn->error);
     }
 }
 

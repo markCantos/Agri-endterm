@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +8,62 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
    
-    <title>Calendar with Event Modal</title>
+    <title>DASHBOARD</title>
 </head>     
 <body>
 <main>
     <div class="news-section">
-      <div class="latest-news-box"> <p> LATEST NEWS</p></div>
+    
+      <div class="latest-news-box"> 
+         <img src="icons/thunder-unscreen.gif">
+          <p> LATEST NEWS</p></div>
       <div class="slider" style="
-                   --width: 600px;
+                   --width: 800px;
                    --height: 40px;
-                   --quantity: 3  ;
-                   background-color: black;
+                   --quantity: 4  ;
+                   background-color: #E9EFEC;
     ">
         <div class="list">
-        <div class="item" style="--position: 1">Typhoon Season Hits Philippine Farms</div>
-        <div class="item" style="--position: 2">El Niño Expected to Affect Crop Yields</div>
-        <div class="item" style="--position: 3">Farmers Brace for Unpredictable Weather</div>
-        <div class="item" style="--position: 4">Weather Delays Philippine Rice Planting</div>
-        <div class="item" style="--position: 5">Typhoon Season Hits Philippine Farms</div>
-        <div class="item" style="--position: 6">El Niño Expected to Affect Crop Yields</div>
-        <div class="item" style="--position: 7">Farmers Brace for Unpredictable Weather</div>
+        <div class="item" style="--position: 1">Mt. Kanlaon Activity Increases: Authorities Urge Residents and Farmers to Stay Vigilant</div>
+        <div class="item" style="--position: 2"></div>
+        <div class="item" style="--position: 3">Increased Soil Acidity Observed in Negros Occidental Sugarcane Fields Following Volcanic Ashfall from Mt. Kanlaon</div>
+        <div class="item" style="--position: 4"></div>
+        <div class="item" style="--position: 5">Philippine Agriculture Struggles Amid Climate Challenges: Heavy Rains in Mindanao Threaten Crop Yields</div>
+        <div class="item" style="--position: 6"></div>
+        <div class="item" style="--position: 7">Strong Typhoons Expected to Test the Resilience of Filipino Farmers as Rainy Season Continues</div>
         <div class="item" style="--position: 8"></div>
-        </div>
+        <div class="item" style="--position: 9">Mt. Kanlaon Eruption Causes Over ₱104 Million in Agricultural Losses Local Farmers Face Challenges </div>
+        <div class="item" style="--position: 10"></div>
+
+      </div>
       </div>
     </div>
     <div class="slider" style="
               --width: 200px;
-              --quantity: 9;
+              --quantity: 11;
     ">
     </div>
   </main>
   <nav class="navbar">
     <div class="navbar-container">
         <div class="logo">
-            <img src="icons/logo.png" alt="AGRI Logo" class="logo-img">
+            <img src="icons/logo(1)(1).png" alt="AGRI Logo" class="logo-img">
         </div>
         <ul class="nav-menu">
-            <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">ABOUT US</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">CONTACT US</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">ACCOUNT</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-link">Profile</a></li>
+                    <li><a href="#" class="dropdown-link">Settings</a></li>
+                    <li><a href="login.php" class="dropdown-link">Log Out</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="hamburger">
             <span class="bar"></span>
@@ -56,18 +73,21 @@
     </div>
 </nav>
 
+<hr>
   <div class="overall">
     <div class="wrapper">
         <div class="weather-container">
             <div class="container">
                 <div class="search">
                     <input type="text" class="search-bar" placeholder="Enter City">
-                    <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
-                        width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                    <button class="button1">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg" margin-top="220px">
                         <path
                           d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
                         </path>
-                      </svg></button>
+                      </svg>
+                      </button>
                   </div>
             </div>
         </div>
@@ -168,13 +188,13 @@
         <div id="calendar"></div>
 
         <!-- Button to Open Add Event Modal -->
-        <button id="addEventButton">Add Event</button>
+        <button id="addEventButton">Add Activity</button>
 
         <!-- Modal for Adding Events -->
         <div id="addEventModal" class="modal">
             <div class="modal-content">
                 <span class="close" id="closeAddModal">&times;</span>
-                <h2>Add New Event</h2>
+                <h2>Add New Activity</h2>
                 <form id="addEventForm">
                     <label for="newEventTitle">Title:</label>
                     <input type="text" id="newEventTitle" name="title" required><br><br>
@@ -247,7 +267,7 @@
             var addEventButton = document.getElementById('addEventButton');
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
-                initialDate: '2024-11-07',
+                initialDate: '2024-12-07',
                 headerToolbar: {
                     left: 'prev,next today',
                     center: 'title',
@@ -280,9 +300,9 @@
                         })
                         .then(response => response.text())
                         .then(data => {
-                            alert(data); // Show success message
-                            calendar.refetchEvents(); // Refresh events
-                            editEventModal.style.display = 'none'; // Close modal
+                            alert(data); 
+                            calendar.refetchEvents(); 
+                            editEventModal.style.display = 'none'; 
                         });
                     };
 
@@ -296,9 +316,9 @@
                             })
                             .then(response => response.text())
                             .then(data => {
-                                alert(data); // Show success message
-                                calendar.refetchEvents(); // Refresh events
-                                editEventModal.style.display = 'none'; // Close modal
+                                alert(data); 
+                                calendar.refetchEvents(); 
+                                editEventModal.style.display = 'none'; 
                             });
                         }
                     };
@@ -307,12 +327,12 @@
 
             calendar.render();
 
-            // Open Add Event Modal
+            
             addEventButton.onclick = function () {
                 addEventModal.style.display = 'block';
             };
 
-            // Close Modals
+            
             closeModal.onclick = function () {
                 editEventModal.style.display = 'none';
             };
@@ -330,7 +350,7 @@
                 }
             };
 
-            // Save New Event
+            
             document.getElementById('saveEventButton').onclick = function () {
                 var newEventTitle = document.getElementById('newEventTitle').value;
                 var newEventDate = document.getElementById('newEventDate').value;
@@ -345,9 +365,9 @@
                 })
                 .then(response => response.text())
                 .then(data => {
-                    alert(data); // Show success message
-                    calendar.refetchEvents(); // Refresh events
-                    addEventModal.style.display = 'none'; // Close modal
+                    alert(data); 
+                    calendar.refetchEvents(); 
+                    addEventModal.style.display = 'none'; 
                 });
             };
         });

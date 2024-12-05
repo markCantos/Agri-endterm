@@ -17,9 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param('ssi', $title, $date, $id);
 
     if ($stmt->execute()) {
-        echo json_encode(['success' => true, 'message' => 'Event updated successfully!']);
+        echo json_encode('Event updated successfully!');
     } else {
-        echo json_encode(['success' => false, 'message' => 'Error updating event: ' . $conn->error]);
+        echo json_encode('Error updating event: ' . $conn->error);
     }
 }
 
