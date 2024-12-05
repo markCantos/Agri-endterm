@@ -286,8 +286,8 @@
 
                     // Update event logic
                     document.getElementById('updateEventButton').onclick = function () {
-                        var updatedTitle = document.getElementById('modalTitle').value;
-                        var updatedDate = document.getElementById('modalDate').value;
+                        const updatedTitle = document.getElementById('modalTitle').value;
+                        const updatedDate = document.getElementById('modalDate').value;
 
                         fetch('updateEvent.php', {
                             method: 'POST',

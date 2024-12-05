@@ -15,7 +15,7 @@ $stmt->bind_param("sss", $email, $username, $hashed_password);
 if ($stmt->execute()) {
     echo "<script>
             alert('Account created successfully!');
-            window.location.href = 'login.php';
+            window.location.href = '/login.php';
           </script>";
 } else {
     echo "Error: " . $stmt->error;
